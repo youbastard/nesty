@@ -1,5 +1,5 @@
-nesty
-Nicholas Ortenzio 2013
+nesty - Nicholas Ortenzio 2013
+
 View a sample at http://downwith.us/nesty
 
 =====
@@ -16,6 +16,8 @@ Simply call the nesty function with the arrays you want to loop through and it t
 for example, to print out the numbers in 0 - 255; which would normally take 8 nested loops, you can do this 
 
 var a=[0,1];
+
 var func = function(a,b,c,d,e,f,g) { console.log("" + a + b + c + d + e +f + g); }
+
 nesty(func, a,a,a,a,a,a,a,a);
 
