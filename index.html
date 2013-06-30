@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+
+	<head>
+		<style>
+			#container { width: 1000px; margin: 20px auto;}
+		</style>
+	</head>	
+
+	<body>
+
+		<div id="container">
+			<pre class="code">
+				var $table = document.getElementById('binarytable');
+
+				var foo = [0,1];
+				var bar = [0,1];
+				var baz = [0,1];
+				var func = function (a,b,c) { 
+					var tr = document.createElement('tr');
+					tr.innerHTML = "<td>" + a + "</td><td>" + b + "</td><td>" + c + "</td>";
+					$table.appendChild(tr);
+				};
+
+				nesty(func, foo, bar, baz);
+			</pre>
+
+			<table id="binarytable"></table>
+		</div>
+	</body>
+
+	<script src="nesty.js"></script>
+	<script>
+		var $table = document.getElementById('binarytable');
+
+		var foo = [0,1];
+		var bar = [0,1];
+		var baz = [0,1];
+		var func = function (a,b,c) { 
+			var tr = document.createElement('tr');
+			tr.innerHTML = "<td>" + a + "</td><td>" + b + "</td><td>" + c + "</td>";
+			$table.appendChild(tr);
+		};
+
+		nesty(func, foo, bar, baz);
+
+	</script>
+
+</html>
