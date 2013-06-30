@@ -1,3 +1,9 @@
+/* 
+    nesty.js
+    Copyright (c) 2013 Nicholas Ortenzio (http://downwith.us)
+    Distributed under the MIT License (http://opensource.org/licenses/MIT)
+*/
+
 var nesty = function (func) {
     var args = Array.prototype.slice.call(arguments,1);
     
